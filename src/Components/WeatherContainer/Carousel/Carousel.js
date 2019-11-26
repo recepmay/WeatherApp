@@ -51,21 +51,30 @@ class Carousel extends React.Component {
         } = this.props;
 
         let byDay = [];
+        let temp;
 
         let groupDay = value => {
             let d = new Date(value['dt_txt']);
             d = Math.floor(d.getDate());
-            byDay[d] = byDay[d] || [];
-            byDay[d].push(value);
+
+            //check if new month starts, add those days to the end of the array
+            if(d < byDay.length - 1) {
+                if(d !== temp) {
+                    byDay[byDay.length-1+d] = byDay[byDay.length-1+d] || [];
+                }
+                byDay[byDay.length-1].push(value);
+            } else {
+                byDay[d] = byDay[d] || [];
+                byDay[d].push(value);
+            }
+            temp = d;
         };
 
         getForecastSlc.map(groupDay);
 
-        let filtered = byDay.filter(function (el) {
+        return byDay.filter(function (el) {
             return el !== [];
         });
-
-        return filtered;
     };
 
     renderCards = () => {
