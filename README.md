@@ -18,3 +18,12 @@ Project can be run:
 
 • npm install
 • npm start
+
+
+Note:
+
+node 14.17.3
+
+node-sass 4.14.0
+
+gulp-sass ^5.0.0
