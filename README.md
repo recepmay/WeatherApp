@@ -1,29 +1,23 @@
+# Wheather App Project
 
-Project has been completed in under about 4 hours in total.
+This project has been completed under about 4 hours in total as requested.
 
-The WeatherApp contains two screens: 
+## Tech Stack
 
-• Loading screen 
-• Weather info screen
+* React 16.9.0
+* Node.js 14.17.3
+* Redux 4.0.1
 
-Project has been created using React.js and state management tool Redux.
+## Running the application
 
-Material UI elements has been used for drawing cards, buttons, etc.
+* npm install
+* npm start
 
-react-items-carousel has been used for carousel card design of the project since it has many features. It also lets users to customize the components according to their needs and has many properties to play around.
+## Further Notes
 
-react-google-charts has been used for drawing the bar charts. It also has user friendly components and they are being modified easily.
-
-Project can be run: 
-
-• npm install
-• npm start
-
-
-Note:
-
-node 14.17.3
-
-node-sass 4.14.0
-
-gulp-sass ^5.0.0
+* Loading spinner is shown when fetching the weather information.
+* Weather cards can be selected to see detailed weather forecast by day.
+* Project has been created using React.js and state management tool Redux.
+* Material UI elements has been used for drawing cards, buttons, etc.
+* react-items-carousel has been used for carousel card design of the project.
+* react-google-charts has been used for drawing the bar charts.
