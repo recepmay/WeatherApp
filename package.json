@@ -5,7 +5,7 @@
   "dependencies": {
     "@material-ui/core": "^4.6.0",
     "@material-ui/icons": "^4.5.1",
-    "bootstrap": "4.1.2",
+    "bootstrap": "4.3.1",
     "cors": "^2.8.5",
     "enzyme": "^3.10.0",
     "enzyme-to-json": "^3.4.0",
